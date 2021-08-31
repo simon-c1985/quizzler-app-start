@@ -1,10 +1,10 @@
 import requests
 
 parameters = {
-	'amount': 20,
-	'category': 9,
-	'difficulty': 'medium',
-	'type': 'boolean'
+    'amount': 20,
+    'category': 9,
+    'difficulty': 'medium',
+    'type': 'boolean'
 }
 
 response = requests.get("https://opentdb.com/api.php", params=parameters)
@@ -13,7 +13,7 @@ question_data = response.json()['results']
 # for phrase in question_data:
 # 	phrase['question'] = phrase['question'].replace("&quot;", "\'")
 # 	phrase['question'] = phrase['question'].replace("&#039;", "\'")
-	
+
 # print(question_data)
 
 # question_data = [
